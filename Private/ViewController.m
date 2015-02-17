@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HomeBord.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"viewDidLoad");
+          
+    [NSTimer scheduledTimerWithTimeInterval:3.0
+                                     target:self
+                                   selector:@selector(NextTo)
+                                   userInfo:nil
+                                    repeats:NO];
+    
 }
+
+- (void)NextTo{
+    
+    NSLog(@"method Nexto");
+    
+    HomeBord *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"HomeBord"];
+    detail.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self.navigationController pushViewController:detail animated:NO];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

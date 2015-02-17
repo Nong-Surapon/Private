@@ -14,6 +14,10 @@
 		8929A6D71A7F49D70041AB48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8929A6D61A7F49D70041AB48 /* Images.xcassets */; };
 		8929A6DA1A7F49D70041AB48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8929A6D81A7F49D70041AB48 /* LaunchScreen.xib */; };
 		8929A6E61A7F49D70041AB48 /* PrivateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929A6E51A7F49D70041AB48 /* PrivateTests.m */; };
+		8929A6F71A7F51290041AB48 /* HomeBord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929A6F61A7F51290041AB48 /* HomeBord.m */; };
+		89624B611A8FA6B600CD33CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89624B601A8FA6B600CD33CF /* Default-568h@2x.png */; };
+		89D9F25B1A8DD2F4007EAEA7 /* iG-iPhone3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9F25A1A8DD2F4007EAEA7 /* iG-iPhone3.5.png */; };
+		89D9F25E1A8DD57B007EAEA7 /* addMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F25D1A8DD57B007EAEA7 /* addMoney.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		8929A6DF1A7F49D70041AB48 /* PrivateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8929A6E41A7F49D70041AB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8929A6E51A7F49D70041AB48 /* PrivateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateTests.m; sourceTree = "<group>"; };
+		8929A6F51A7F51290041AB48 /* HomeBord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBord.h; sourceTree = "<group>"; };
+		8929A6F61A7F51290041AB48 /* HomeBord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBord.m; sourceTree = "<group>"; };
+		89624B601A8FA6B600CD33CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		89D9F25A1A8DD2F4007EAEA7 /* iG-iPhone3.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iG-iPhone3.5.png"; path = "../../Image/iG-iPhone3.5.png"; sourceTree = "<group>"; };
+		89D9F25C1A8DD57B007EAEA7 /* addMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addMoney.h; sourceTree = "<group>"; };
+		89D9F25D1A8DD57B007EAEA7 /* addMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addMoney.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 		8929A6BD1A7F49D70041AB48 = {
 			isa = PBXGroup;
 			children = (
+				89624B601A8FA6B600CD33CF /* Default-568h@2x.png */,
 				8929A6C81A7F49D70041AB48 /* Private */,
 				8929A6E21A7F49D70041AB48 /* PrivateTests */,
 				8929A6C71A7F49D70041AB48 /* Products */,
@@ -81,14 +92,19 @@
 		8929A6C81A7F49D70041AB48 /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				8929A6EF1A7F4B570041AB48 /* Image */,
 				8929A6CD1A7F49D70041AB48 /* AppDelegate.h */,
 				8929A6CE1A7F49D70041AB48 /* AppDelegate.m */,
 				8929A6D01A7F49D70041AB48 /* ViewController.h */,
 				8929A6D11A7F49D70041AB48 /* ViewController.m */,
+				8929A6F51A7F51290041AB48 /* HomeBord.h */,
+				8929A6F61A7F51290041AB48 /* HomeBord.m */,
 				8929A6D31A7F49D70041AB48 /* Main.storyboard */,
 				8929A6D61A7F49D70041AB48 /* Images.xcassets */,
 				8929A6D81A7F49D70041AB48 /* LaunchScreen.xib */,
 				8929A6C91A7F49D70041AB48 /* Supporting Files */,
+				89D9F25C1A8DD57B007EAEA7 /* addMoney.h */,
+				89D9F25D1A8DD57B007EAEA7 /* addMoney.m */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -117,6 +133,14 @@
 				8929A6E41A7F49D70041AB48 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8929A6EF1A7F4B570041AB48 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				89D9F25A1A8DD2F4007EAEA7 /* iG-iPhone3.5.png */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8929A6D51A7F49D70041AB48 /* Main.storyboard in Resources */,
+				89D9F25B1A8DD2F4007EAEA7 /* iG-iPhone3.5.png in Resources */,
 				8929A6DA1A7F49D70041AB48 /* LaunchScreen.xib in Resources */,
+				89624B611A8FA6B600CD33CF /* Default-568h@2x.png in Resources */,
 				8929A6D71A7F49D70041AB48 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8929A6D21A7F49D70041AB48 /* ViewController.m in Sources */,
+				89D9F25E1A8DD57B007EAEA7 /* addMoney.m in Sources */,
 				8929A6CF1A7F49D70041AB48 /* AppDelegate.m in Sources */,
+				8929A6F71A7F51290041AB48 /* HomeBord.m in Sources */,
 				8929A6CC1A7F49D70041AB48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +442,7 @@
 				8929A6EB1A7F49D70041AB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8929A6EC1A7F49D70041AB48 /* Build configuration list for PBXNativeTarget "PrivateTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +451,7 @@
 				8929A6EE1A7F49D70041AB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
