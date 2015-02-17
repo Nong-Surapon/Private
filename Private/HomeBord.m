@@ -8,6 +8,7 @@
 
 #import "HomeBord.h"
 #import "addMoney.h"
+#import "uponReceipt.h"
 
 @interface HomeBord ()
 
@@ -25,9 +26,14 @@
 //    detail.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 //    [self.navigationController pushViewController:detail animated:NO];
     
-    addMoney *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"addMoney"];
-    [self.navigationController pushViewController:controller animated:YES];
+    addMoney *viewAcc = [self.storyboard instantiateViewControllerWithIdentifier:@"addMoney"];
+    [self.navigationController presentViewController:viewAcc animated:YES completion:Nil];
 
+}
+- (IBAction)upon:(id)sender {
+    uponReceipt *viewAcc = [self.storyboard instantiateViewControllerWithIdentifier:@"uponReceipt"];
+    [self.navigationController pushViewController:viewAcc animated:YES];
+    
 }
 
 

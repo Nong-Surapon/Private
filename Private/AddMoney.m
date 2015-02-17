@@ -7,8 +7,7 @@
 //
 
 #import "addMoney.h"
-#define URL @"http://192.168.2.209:8888/private/"
-#define URL2 @"http://192.168.0.16:8888/private/"
+#import "Config.h"
 
 @interface addMoney ()<NSURLConnectionDelegate, UITextFieldDelegate, UITextViewDelegate>
 {
@@ -132,7 +131,8 @@
     
 }
 - (IBAction)btnBack:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
 
