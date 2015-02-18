@@ -13,7 +13,6 @@
 		8929A6D51A7F49D70041AB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8929A6D31A7F49D70041AB48 /* Main.storyboard */; };
 		8929A6D71A7F49D70041AB48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8929A6D61A7F49D70041AB48 /* Images.xcassets */; };
 		8929A6DA1A7F49D70041AB48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8929A6D81A7F49D70041AB48 /* LaunchScreen.xib */; };
-		8929A6E61A7F49D70041AB48 /* PrivateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929A6E51A7F49D70041AB48 /* PrivateTests.m */; };
 		8929A6F71A7F51290041AB48 /* HomeBord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929A6F61A7F51290041AB48 /* HomeBord.m */; };
 		89624B611A8FA6B600CD33CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89624B601A8FA6B600CD33CF /* Default-568h@2x.png */; };
 		8985CFBE1A9305F6001D3BAC /* uponReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8985CFBD1A9305F6001D3BAC /* uponReceipt.m */; };
@@ -43,11 +42,9 @@
 		8929A6D61A7F49D70041AB48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8929A6D91A7F49D70041AB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8929A6DF1A7F49D70041AB48 /* PrivateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8929A6E41A7F49D70041AB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8929A6E51A7F49D70041AB48 /* PrivateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateTests.m; sourceTree = "<group>"; };
 		8929A6F51A7F51290041AB48 /* HomeBord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBord.h; sourceTree = "<group>"; };
 		8929A6F61A7F51290041AB48 /* HomeBord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBord.m; sourceTree = "<group>"; };
-		89624B601A8FA6B600CD33CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		89624B601A8FA6B600CD33CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		8985CFBC1A9305F6001D3BAC /* uponReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uponReceipt.h; sourceTree = "<group>"; };
 		8985CFBD1A9305F6001D3BAC /* uponReceipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uponReceipt.m; sourceTree = "<group>"; };
 		8985CFCE1A931888001D3BAC /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
@@ -77,9 +74,7 @@
 		8929A6BD1A7F49D70041AB48 = {
 			isa = PBXGroup;
 			children = (
-				89624B601A8FA6B600CD33CF /* Default-568h@2x.png */,
 				8929A6C81A7F49D70041AB48 /* Private */,
-				8929A6E21A7F49D70041AB48 /* PrivateTests */,
 				8929A6C71A7F49D70041AB48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,26 +120,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8929A6E21A7F49D70041AB48 /* PrivateTests */ = {
-			isa = PBXGroup;
-			children = (
-				8929A6E51A7F49D70041AB48 /* PrivateTests.m */,
-				8929A6E31A7F49D70041AB48 /* Supporting Files */,
-			);
-			path = PrivateTests;
-			sourceTree = "<group>";
-		};
-		8929A6E31A7F49D70041AB48 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8929A6E41A7F49D70041AB48 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		8929A6EF1A7F4B570041AB48 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				89624B601A8FA6B600CD33CF /* Default-568h@2x.png */,
 				89D9F25A1A8DD2F4007EAEA7 /* iG-iPhone3.5.png */,
 			);
 			name = Image;
@@ -265,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8929A6E61A7F49D70041AB48 /* PrivateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

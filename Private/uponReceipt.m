@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [loading setHidden:TRUE];
     
     //Number Format 10,000
     NSNumberFormatter *formatter = [NSNumberFormatter new];

@@ -9,6 +9,7 @@
 #import "HomeBord.h"
 #import "addMoney.h"
 #import "uponReceipt.h"
+//#import "GMDCircleLoader.h"
 
 @interface HomeBord ()
 
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //[GMDCircleLoader setOnView:self.view withTitle:@"Loading..." animated:YES];
 }
 
 - (IBAction)addMoney:(id)sender {

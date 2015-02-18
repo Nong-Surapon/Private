@@ -16,6 +16,7 @@
      IBOutlet UIButton *btn3;
      IBOutlet UIButton *btn4;
      IBOutlet UILabel *lblRes;
+     IBOutlet UIActivityIndicatorView *loading;
     
 }
 @end

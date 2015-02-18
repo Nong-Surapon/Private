@@ -10,8 +10,8 @@
 
 @interface Config : NSObject
 
-#define URL @"http://192.168.2.209:8888/private/"
-#define URL2 @"http://192.168.0.16:8888/private/"
+#define URL1 @"http://192.168.2.209:8888/private/"
+#define URL @"http://192.168.0.16:8888/private/"
 
 
 @end
